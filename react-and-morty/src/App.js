@@ -1,6 +1,10 @@
 import React from "react";
-import "./App.css";
 import { useCharacters, useLocations } from "./api/useData";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import Characters from "./components/Characters";
+import Locations from "./components/Locations";
 
 function App() {
   const characters = useCharacters(1);
@@ -11,7 +15,15 @@ function App() {
   console.log("Locations data: ");
   console.log(locations);
 
-  return <div className="App">Take a look at the console! (F12)</div>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/characters" element={<Characters />} />
+        <Route path="/locations" element={<Locations />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
