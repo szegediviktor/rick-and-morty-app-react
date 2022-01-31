@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Characters from "./components/Characters";
 import Locations from "./components/Locations";
+import CharacterCard from "./components/CharacterDisplay/CharacterCard";
 
 function App() {
   const characters = useCharacters(1);
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/locations" element={<Locations />} />
+        <Route path="/character" element={<CharacterCard />} />
       </Routes>
     </Router>
   );
