@@ -19,7 +19,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/characters" element={<Characters />} />
+        <Route
+          path="/characters"
+          element={<Characters charactersArray={characters.results} />}
+        />
         <Route path="/locations" element={<Locations />} />
       </Routes>
     </Router>
