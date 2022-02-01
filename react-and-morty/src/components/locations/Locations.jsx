@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocations } from "../../api/useData";
 import { useState } from "react";
-import { GridContainer, GridCard } from "../Characters.styles";
+import { GridContainer, GridCard } from "../Characters/Characters.styles";
 import { LocationCard } from "./Locations.styles";
 
 const Locations = () => {

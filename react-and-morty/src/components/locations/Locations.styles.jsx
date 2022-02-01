@@ -1,4 +1,4 @@
-import { GridContainer, GridCard } from "../Characters.styles";
+import { GridContainer, GridCard } from "../Characters/Characters.styles";
 import styled from "styled-components";
 
 export const LocationCard = styled(GridCard)`
