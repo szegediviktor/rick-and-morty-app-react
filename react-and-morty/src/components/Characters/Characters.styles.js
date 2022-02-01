@@ -10,6 +10,7 @@ export const GridContainer = styled.div`
 
 export const GridCard = styled.div`
   border: solid 1px black;
+  border-radius: 5px;
   box-shadow: 2px 2px 2px black;
 
   :hover {
