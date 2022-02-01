@@ -34,6 +34,7 @@ export const Wrapper = styled.div`
         font-weight: bolder;
         letter-spacing: 0.2rem;
         border: 2px solid orange;
+        transition: 0.5s ease-in-out;
 
         @media only screen and (max-width: 600px) {
             margin-bottom: 1rem;

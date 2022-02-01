@@ -5,7 +5,8 @@ import "./App.css";
 import Home from "./components/Home";
 import Characters from "./components/Characters/Characters";
 import Locations from "./components/locations/Locations";
-import CharacterCard from "./components/CharacterCard";
+import CharacterCard from "./components/CharacterDisplay/CharacterCard";
+import CharacterDataDisplay from "./components/CharacterDisplay/CharacterDataDisplay";
 
 function App() {
   console.log("Characters data: ");
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/locations" element={<Locations />} />
-        <Route path="/character" element={<CharacterCard />} />
+        <Route path="/character" element={<CharacterDataDisplay />} />
       </Routes>
     </Router>
   );
