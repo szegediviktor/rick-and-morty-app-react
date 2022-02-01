@@ -11,6 +11,7 @@ export const GridContainer = styled.div`
 export const GridCard = styled.div`
   border: solid 1px black;
   box-shadow: 2px 2px 2px black;
+  text-align: center;
 
   :hover {
     transform: scale(1.03);
