@@ -5,8 +5,8 @@ import "./App.css";
 import Home from "./components/Home";
 import Characters from "./components/Characters/Characters";
 import Locations from "./components/locations/Locations";
-import CharacterCard from "./components/CharacterCard";
-import CharacterDataDisplay from "./components/CharacterDataDisplay";
+import CharacterCard from "./components/CharacterDisplay/CharacterCard";
+import CharacterDataDisplay from "./components/CharacterDisplay/CharacterDataDisplay";
 
 function App() {
   console.log("Characters data: ");
