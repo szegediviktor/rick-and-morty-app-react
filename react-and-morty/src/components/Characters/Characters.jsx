@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { GridContainer, GridImg, GridCard } from "./Characters.styles";
 import { useCharacters } from "../../api/useData";
 import Pagination from "../Pagination/Pagination";
