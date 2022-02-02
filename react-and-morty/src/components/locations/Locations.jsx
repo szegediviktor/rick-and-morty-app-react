@@ -1,9 +1,11 @@
 import React from "react";
 import { useLocations } from "../../api/useData";
 import { useState } from "react";
-import { GridContainer, GridCard } from "../Characters/Characters.styles";
-import { LocationCard } from "./Locations.styles";
+import { GridContainer } from "../Characters/Characters.styles";
+import { LocationCard, Background } from "./Locations.styles";
 import Pagination from "../Pagination/Pagination";
+import { Link } from "react-router-dom";
+import CandyBackground from "../../images/candymountain.jpg";
 
 const Locations = () => {
   const [pageNum, setPageNum] = useState(1);
@@ -11,13 +13,16 @@ const Locations = () => {
 
   return (
     <>
+      <Background src={CandyBackground} />
       <GridContainer>
         {locations.results?.map((locations) => {
           return (
-            <LocationCard key={locations.id}>
-              <h3>{locations.name}</h3>
-              <p>{locations.type}</p>
-            </LocationCard>
+            <Link key={locations.id} to={`/location/${locations.id}`}>
+              <LocationCard>
+                <h3>{locations.name}</h3>
+                <p>{locations.type}</p>
+              </LocationCard>
+            </Link>
           );
         })}
       </GridContainer>
