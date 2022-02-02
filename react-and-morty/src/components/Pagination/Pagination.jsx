@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { Wrapper, ListItem } from "./Pagination.styles";
 
 const Pagination = (props) => {
-  const { perPage, current = 1, total, onChange } = props;
-  const [currentPage, setCurrentPage] = useState(1);
+  const { current = 1, total, onChange } = props;
 
   const goToNextPage = () => {
     if (current < total) {
@@ -13,17 +11,13 @@ const Pagination = (props) => {
 
   const goToPrevPage = () => {
     if (current > 1 && current <= total) {
-      const start = (current - 2) * perPage;
-      const end = (current - 1) * perPage;
-      onChange && onChange({ start, end, current: current - 1 });
+      onChange && onChange({ current: current - 1 });
     }
   };
 
   const goToSelectedPage = (i) => {
     if (current !== i) {
-      const start = (i - 1) * perPage;
-      const end = i * perPage;
-      onChange && onChange({ start, end, current: i });
+      onChange && onChange({ current: i });
     }
   };
 
@@ -58,23 +52,3 @@ const Pagination = (props) => {
 };
 
 export default Pagination;
-
-//   const pageNumbers = [];
-
-//   for (let i = 1; i <= Math.ceil(totalChars / charsPerPage); i++) {
-//     pageNumbers.push(i);
-//   }
-
-//   return (
-//     <Nav>
-//       <ul className="pagination">
-//         {pageNumbers.map((number) => (
-//           <li key={number}>
-//             <a onClick={() => paginate(number)} href="!#">
-//               {number}
-//             </a>
-//           </li>
-//         ))}
-//       </ul>
-//     </Nav>
-//   );

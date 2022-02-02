@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useFetch } from "./useFetch.js";
 import { mainUrls } from "./dataRoutes.js";
 
@@ -30,4 +30,20 @@ export const useLocations = (pageNum = 1) => {
     setUrl(mainUrls.locations + pageNum);
   }, [pageNum]);
   return locations === undefined ? "Loading..." : locations;
+};
+
+export const useCharacter = (id = 1) => {
+  const [character, setUrl] = useFetch(mainUrls.character + id);
+  useEffect(() => {
+    setUrl(mainUrls.character + id);
+  }, [id]);
+  return character === undefined ? "Loading..." : character;
+};
+
+export const useLocation = (id = 1) => {
+  const [location, setUrl] = useFetch(mainUrls.location + id);
+  useEffect(() => {
+    setUrl(mainUrls.location + id);
+  }, [id]);
+  return location === undefined ? "Loading..." : location;
 };

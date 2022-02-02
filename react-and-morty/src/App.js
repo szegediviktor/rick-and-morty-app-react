@@ -1,5 +1,4 @@
 import React from "react";
-import { useCharacters, useLocations } from "./api/useData";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
@@ -18,8 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/locations" element={<Locations />} />
-        <Route path="/character" element={<CharacterDataDisplay />} />
-        <Route path="/location" element={<LocationDataDisplay />} />
+        <Route path="/character/:id" element={<CharacterDataDisplay />} />
+        <Route path="/location/:id" element={<LocationDataDisplay />} />
       </Routes>
     </Router>
   );
