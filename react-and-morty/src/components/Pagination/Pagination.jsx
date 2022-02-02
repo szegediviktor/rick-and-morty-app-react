@@ -29,7 +29,7 @@ const Pagination = (props) => {
 
   const displayPageNums = (current) => {
     let pageNumbers = [];
-    for (let i = current; i <= total; i++) {
+    for (let i = 1; i <= total; i++) {
       pageNumbers.push(i);
     }
     if (current === 1) {
