@@ -5,7 +5,7 @@ export const WholePageDiv = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    padding: 1.1rem;
+    padding: 1rem;
     margin-top: 1rem;
     margin-left: 1rem;
     padding: 0.75rem 1.25rem;
@@ -71,22 +71,6 @@ export const Name = styled.h1`
   }
 `;
 
-export const Status = styled.h3`
-  color: rgba(255, 255, 255, 0.9);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0);
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
-  }
-`;
-export const Species = styled.h3`
-  color: rgba(255, 255, 255, 0.9);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0);
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
-  }
-`;
 export const Type = styled.h3`
   color: rgba(255, 255, 255, 0.9);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0);
@@ -95,42 +79,11 @@ export const Type = styled.h3`
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
   }
 `;
-export const Gender = styled.h3`
+export const Dimension = styled.h3`
   color: rgba(255, 255, 255, 0.9);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0);
   &:hover {
     color: rgba(255, 255, 255, 1);
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
   }
-`;
-export const OriginName = styled.h3`
-  color: rgba(255, 255, 255, 0.9);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0);
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
-  }
-`;
-export const LocationName = styled.h3`
-  color: rgba(255, 255, 255, 0.9);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0);
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
-  }
-`;
-export const Image = styled.img`
-    place-self: center;
-    height: 80%;
-    border-radius: 1rem;
-    
-	-webkit-filter: grayscale(80%);
-	filter: grayscale(80%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-
-
-    &:hover {
-        -webkit-filter: grayscale(0);
-	filter: grayscale(0);
 `;
