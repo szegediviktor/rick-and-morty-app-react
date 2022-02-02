@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const GridContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
