@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const WholePageDiv = styled.div`
+    height: 100vh;
+
     .backButton {
         position: absolute;
         top: 0;
@@ -15,6 +17,7 @@ export const WholePageDiv = styled.div`
         border-radius: 20px;
         font-weight: normal;
         transition: all 0.5s ease;
+
         &:hover {
             background-color: rgba(0, 0, 0, 1);
             border-radius: 10px;

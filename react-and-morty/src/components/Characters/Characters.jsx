@@ -21,6 +21,12 @@ const Characters = () => {
                 Back
             </Link>
             <Title>Characters</Title>
+            <Pagination
+                total={42}
+                current={pageNum}
+                perPage={20}
+                onChange={({ current }) => setPageNum(current)}
+            />
             <GridContainer>
                 {characters.results?.map((character) => {
                     return (

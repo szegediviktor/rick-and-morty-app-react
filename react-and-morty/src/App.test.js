@@ -1,18 +1,10 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import App from "./App";
+import { MemoryRouter } from "react-router-dom";
+import Pagination from "./components/Pagination/Pagination";
 
 test("There are test-cases that check whether the page loads successfuly", () => {
-  const { container } = render(<App />);
-  // expect(container).toMatchSnapshot();
+    const { container } = render(<App />);
+    // expect(container).toMatchSnapshot();
 });
-
-// test("Should render Home page from route", () => {
-//   // Home.mockImplementation(() => <div>Home</div>);
-//   render(
-//     <MemoryRouter>
-//       <App />
-//     </MemoryRouter>
-//   );
-//   expect(screen.getByText("Home")).toBeInTheDocument();
-// });
