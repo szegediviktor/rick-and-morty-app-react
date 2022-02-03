@@ -14,6 +14,7 @@ export const GridCard = styled.div`
   border-radius: 5px;
   box-shadow: 2px 2px 2px black;
   text-align: center;
+  text-decoration: none !important;
 
   :hover {
     transform: scale(1.03);
