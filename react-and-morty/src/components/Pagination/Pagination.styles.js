@@ -8,6 +8,7 @@ export const Wrapper = styled.nav`
   padding-top: 2rem;
   height: 20px;
   position: relative;
+  margin-bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
 `;

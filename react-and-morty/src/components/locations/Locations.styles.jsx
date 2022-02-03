@@ -4,6 +4,7 @@ import portal from "../../images/portal.png";
 
 export const Container = styled.div`
   width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   .backButton {
     position: absolute;
@@ -51,6 +52,7 @@ export const LocationCard = styled.div`
   font-size: 0.8rem;
   text-shadow: #20a308 1px 1px;
   font-weight: bold;
+  transition: 0.5s ease-in-out;
 
   &:hover {
     background-image: url(${portal});
@@ -61,7 +63,6 @@ export const LocationCard = styled.div`
     height: 11rem;
     width: 11rem;
     font-size: 1rem;
-    transition: all 0.5s ease;
   }
 `;
 
@@ -77,9 +78,10 @@ export const Title = styled.h1`
 
 export const GridContainerLoc = styled.div`
   width: 90%;
-  height: 100%;
+  height: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 0.5rem;
+  margin-bottom: 2rem;
 `;
