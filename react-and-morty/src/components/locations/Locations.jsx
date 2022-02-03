@@ -1,14 +1,10 @@
 import React from "react";
 import { useLocations } from "../../api/useData";
 import { useState } from "react";
-import {
-  LocationCard,
-  Title,
-  Container,
-  GridContainerLoc,
-} from "./Locations.styles";
+import { LocationCard, Container, GridContainerLoc } from "./Locations.styles";
 import Pagination from "../Pagination/Pagination";
 import { Link } from "react-router-dom";
+import { Title } from "../Characters/Characters.styles";
 
 const Locations = () => {
   const [pageNum, setPageNum] = useState(1);
@@ -20,6 +16,12 @@ const Locations = () => {
         Back
       </Link>
       <Title>Locations</Title>
+      <Pagination
+        total={7}
+        current={pageNum}
+        perPage={18}
+        onChange={({ current }) => setPageNum(current)}
+      />
       <GridContainerLoc>
         {locations.results?.map((locations) => {
           return (

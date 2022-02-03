@@ -6,7 +6,7 @@ import { createMemoryHistory } from "history";
 
 test("There are test-cases that check whether the page loads successfuly", () => {
   const { container } = render(<App />);
-  // expect(container).toMatchSnapshot();
+  expect(container).toMatchSnapshot();
 });
 
 test("there is a test that tests whether there is a button for Characters", () => {

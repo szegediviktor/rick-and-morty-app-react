@@ -1,4 +1,3 @@
-import { GridCard } from "../Characters/Characters.styles";
 import styled from "styled-components";
 import portal from "../../images/portal.png";
 

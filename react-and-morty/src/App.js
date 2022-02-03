@@ -8,9 +8,6 @@ import CharacterDataDisplay from "./components/CharacterDisplay/CharacterDataDis
 import LocationDataDisplay from "./components/LocationDisplay/LocationDataDisplay";
 
 function App() {
-  console.log("Characters data: ");
-  console.log("Locations data: ");
-
   return (
     <Router>
       <Routes>

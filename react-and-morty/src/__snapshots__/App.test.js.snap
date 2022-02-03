@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`There are test-cases that check whether the page loads successfuly 1`] = `
+<div>
+  <div>
+    <img
+      class="sc-bdvvtL gnkjgn"
+      src="background.jpg"
+    />
+    <img
+      class="sc-dkPtRN iemXGu"
+      src="logo.png"
+    />
+    <div
+      class="sc-gsDKAQ gWcezE"
+    >
+      <a
+        class="HomeLink"
+        href="/characters"
+      >
+        Characters
+      </a>
+      <a
+        class="HomeLink"
+        href="/locations"
+      >
+         
+        Locations
+      </a>
+    </div>
+    <div
+      class="sc-hKwDye jOobhl"
+    >
+      <p
+        class="Desc"
+      >
+        The Rick and Morty Wiki is an unofficial collaborative database for the hit [adult swim] series Rick and Morty, a science-fiction, black comedy series about genius inventor, Rick Sanchez, and his naive grandson, Morty Smith. The American animated television show is created by Justin Roiland and Dan Harmon. It premiered on Cartoon Network's [adult swim] block on December 2, 2013.
+      </p>
+    </div>
+  </div>
+</div>
+`;
