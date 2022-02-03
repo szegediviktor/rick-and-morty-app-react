@@ -28,7 +28,17 @@ export const Container = styled.div`
   }
 `;
 
-export const LocationCard = styled(GridCard)`
+export const LocationCard = styled.div`
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  text-align: center;
+  text-decoration: none !important;
+
+  :hover {
+    transform: scale(1.03);
+  }
+
   border-radius: 50%;
   height: 9rem;
   width: 9rem;

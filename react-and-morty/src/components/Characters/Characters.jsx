@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { GridContainer, GridImg, GridCard } from "./Characters.styles";
+import {
+  GridContainer,
+  GridImg,
+  GridCard,
+  Title,
+  PageDiv,
+} from "./Characters.styles";
 import { useCharacters } from "../../api/useData";
 import Pagination from "../Pagination/Pagination";
 import { Link } from "react-router-dom";
@@ -10,15 +16,16 @@ const Characters = () => {
   console.log(characters);
 
   return (
-    <>
+    <PageDiv>
+      <Title>Characters</Title>
       <GridContainer>
         {characters.results?.map((character) => {
           return (
             <Link key={character.id} to={`/character/${character.id}`}>
               <GridCard>
                 <GridImg src={character.image} alt="character" />
-                <h3>{character.name}</h3>
-                <p>{character.species}</p>
+                <h3 className="on-character-card">{character.name}</h3>
+                <p className="on-character-card">{character.species}</p>
               </GridCard>
             </Link>
           );
@@ -30,7 +37,7 @@ const Characters = () => {
         perPage={20}
         onChange={({ current }) => setPageNum(current)}
       />
-    </>
+    </PageDiv>
   );
 };
 // charsPerPage={charactersPerPage}
