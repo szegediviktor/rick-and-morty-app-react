@@ -5,22 +5,31 @@ export const Wrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   color: #5e6776;
-  margin-top: 2rem;
+  padding-top: 2rem;
   height: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 export const ListItem = styled.li`
   background-color: #fff;
   width: 20%;
   text-align: center;
-  border: 1px solid #607d8b;
+
   border-radius: 50%;
   margin: 0 0.5rem;
   padding: 8px 15px;
   list-style-type: none;
   cursor: pointer;
+  border: black solid 2px;
+  color: black;
+  font-weight: bold;
 
-  &.active {
-    background-color: #e9e9eb;
+  &:hover {
+    background-color: rgba(200, 25, 19, 0.5);
+  }
+  &:active {
+    background-color: rgba(200, 25, 19, 0.8);
   }
 `;
