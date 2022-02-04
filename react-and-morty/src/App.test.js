@@ -21,16 +21,16 @@ test("there is a test that tests whether there is a button for Locations", () =>
   expect(btn).toBeVisible();
 });
 
-test("routes to a new route", () => {
-  const history = createMemoryHistory();
-  history.push = jest.fn();
+// test("routes to a new route", () => {
+//   const history = createMemoryHistory();
+//   history.push = jest.fn();
 
-  const { getByText } = render(
-    <MemoryRouter history={history}>
-      <Link to="/characters">Characters</Link>
-    </MemoryRouter>
-  );
+//   const { getByText } = render(
+//     <MemoryRouter history={history}>
+//       <Link to="/characters">Characters</Link>
+//     </MemoryRouter>
+//   );
 
-  fireEvent.click(getByText("Characters"));
-  expect(history.push).toHaveBeenCalledWith("/characters");
-});
+//   fireEvent.click(getByText("Characters"));
+//   expect(history.push).toHaveBeenCalledWith("/characters");
+// });
